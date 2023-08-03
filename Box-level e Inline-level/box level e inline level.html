@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Box level e Inline level</title>
+	<link rel="shortcut icon" href="../HTML/imgs/saturno.ico" type="image/x-icon">
+	<style>
+		body{
+			background: fixed;
+			background-color: rgb(192, 159, 116);
+			height: 800px;
+		}
+
+		h1{
+			background-color: cadetblue;
+			width: 200px;
+			height: 100px;
+			border-width: 5px;
+			border-color: darkslategray;
+			border-style: solid;
+			box-shadow: 3px 5px 10px black;
+
+			padding: 20px; 
+			/* se você usar um valor em padding ele será válido para todas as direções
+			se você usar dois valores o primeiro será válido para cima baixo, e o segundo para direita esquerda*/
+
+			margin: 25px auto;
+			/*
+			!EM MARGIN PODE SE USAR auto COMO UM DOS VALORES! */
+
+			outline-style: solid;
+			outline-width: 3px;
+		}
+
+		.links{
+			border-width: 2px;
+			border-style: dotted;
+			border-color: rgb(185, 185, 185);
+			padding: 0px 8px 0px 8px;
+			text-decoration: none;
+			font-style: italic;
+			font-weight: bold;
+
+			margin: 0px 0px 0px 0px;
+		}
+		.links:active{
+			color: yellow;
+			text-decoration: underline;
+
+		}
+
+		img{
+			background-color: lightgray;
+			border-radius: 200px;
+			width: 180px;
+		}
+
+		#p1{
+			position: absolute;
+			top: 220px;
+			left: 200px;
+			width: 200px;
+		}
+
+		code{
+			font-weight: bold;
+		}
+
+		small{
+			font-size: x-small;
+		}
+	</style>
+</head>
+<body>
+	<h1>Exemplo de box level</h1>
+	<p>parágrafo são box-levels mas <a class="links" href="#">links são inline level</a><small> &leftarrow; (como pode se notar)</small></p>
+
+	<img src="https://tr.rbxcdn.com/872d79049d8416b89862b395d83313ce/150/150/AvatarHeadshot/Png" alt="perfil"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quos atque voluptate facere dolorem, temporibus at sequi eius dolorum adipisci tempore aspernatur, rem harum voluptatem placeat doloremque quo assumenda hic.</p>
+
+	<p id="p1">“Não tenho certeza se essa é a melhor forma de posicionar um texto ao lado de uma imagem, eu coloquei o texto definindo posição por posição com a linha de código: <br>
+		<code>
+			position: absolute; <br>
+			top: 200px; <br>
+			left: 170px; <br>
+		</code>
+	provavelmente não é essa a forma mais prática, mas oque importa é que funcionou”</p>
+	
+</body>
+</html>
