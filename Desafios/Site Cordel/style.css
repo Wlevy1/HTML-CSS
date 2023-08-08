@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: Cordel;
+	src: url(assets/fontes/Baby\ Girly.otf);
+}
+
+@font-face {
+	font-family: Parágrafos;
+	src: url(assets/fontes/Cream\ Cake.otf);
+}
+
+* {
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	height: 1200px;
+	background: black url(assets/imagens/background001.jpg) right center no-repeat fixed;
+	background-size: cover;
+}
+
+.cabeçalho{
+	display: block;
+	background-color: black;
+	font-family: Cordel, serif;
+	text-align: center;
+	min-height: 100px;
+	max-height: 500px;
+}
+
+
+.cabeçalho > h1{
+	font-size: 120px;
+	padding-top: 50px;
+	font-weight: 100;
+	word-spacing: 6px;
+}
+
+.cabeçalho > p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+#site{
+	text-decoration: none;
+}
+
+#site:hover{
+	text-decoration: underline;
+}

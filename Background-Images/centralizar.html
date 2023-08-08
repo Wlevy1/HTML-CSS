@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Centralizando verticalmente</title>
+	<style>
+		#container{
+			background-image: url(Images/target001.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			height: 94vh;
+			background-color: rebeccapurple;
+			padding: 10px;
+			position: relative;
+		}
+
+		#conteudo{
+			background-image: url(Images/target001.png);
+			background-size: 100% 100%;
+			position: absolute;
+			height: 200px;
+			width: 300px;
+			background-color: cadetblue;
+
+			left: 50%;
+			top: 50%;
+
+			transform:translate(-150px, -100px)
+		}
+
+		#conteudo > h1{
+			text-align: center;
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<section id="container">
+		<article id="conteudo">
+			<h1>Teste</h1>
+
+		</article>
+	</section>
+	
+</body>
+</html>
