@@ -109,7 +109,7 @@ section > p{
 	background-position: center;
 	box-shadow: inset 0px 3px 10px 1px black;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 }
 
 footer{
