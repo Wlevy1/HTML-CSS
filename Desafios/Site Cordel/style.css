@@ -7,7 +7,7 @@
 
 @font-face {
 	font-family: Parágrafos;
-	src: url(assets/fontes/Cream\ Cake.otf);
+	src: url(assets/fontes/Candy\ Beans.otf);
 }
 
 * {
@@ -18,7 +18,7 @@
 
 body{
 	height: 100vh;
-	background: black url(assets/imagens/background001.jpg) right center no-repeat fixed;
+	background: white url(assets/imagens/background001.jpg) right center no-repeat fixed;
 	background-size: cover;
 }
 
@@ -27,12 +27,11 @@ body{
 	background-color: black;
 	font-family: Cordel, serif;
 	text-align: center;
-	min-height: 100px;
-	max-height: 500px;
 }
 
 
 .cabeçalho > h1{
+	height: 25vw;
 	font-size: 25vh;
 	padding-top: 50px;
 	font-weight: 100;
@@ -46,6 +45,13 @@ body{
 	color: white;
 }
 
+.cabeçalho > p > a:hover{
+	transition-duration: 0.5s;
+	background-color: rgba(255, 255, 255, 0.322);
+	border-radius: 15px;
+	padding: 0px 4px;
+}
+
 #site{
 	text-decoration: none;
 	color: white;
@@ -57,9 +63,18 @@ body{
 }
 
 section{
+	font-size: 2em;
+	font-family: Parágrafos, sans-serif;
 	padding: 10vh 0px;
 	line-height: 40px;
 	padding-left: 20px;
+	font-weight: 100;
+	font-style: italic;
+}
+
+section > p{
+	font-weight: lighter;
+	line-height: 2em;
 }
 
 .imagem{
@@ -68,10 +83,38 @@ section{
 
 .imagem > p{
 	color: white;
-	background-color: rgba(0, 0, 0, 0.479);
-	width: 300px;
+	background-color: rgba(0, 0, 0, 0.342);
+	width: 400px;
+	padding: 5px 15px;
+	text-shadow: 2px 3px 1px black;
 }
 
 .normal{
 	background-color: white;
+}
+
+#img1{
+	background-image: url(assets/imagens/background001.jpg);
+	background-position: center right;
+	background-size: cover;
+	box-shadow: inset 0px 3px 10px 1px black;
+	background-attachment: fixed;
+}
+
+#img2{
+	background-image: url(assets/imagens/background002.jpg);
+	background-position: center;
+	box-shadow: inset 0px 3px 10px 1px black;
+	background-attachment: fixed;
+}
+
+footer{
+	padding: 5px;
+	background-color: black;
+	text-align: center;
+	font-weight: bolder;
+}
+
+footer > span{
+	color: white;
 }
