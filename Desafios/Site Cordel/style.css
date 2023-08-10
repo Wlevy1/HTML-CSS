@@ -23,7 +23,6 @@ body{
 }
 
 .cabeçalho{
-	display: block;
 	background-color: black;
 	font-family: Cordel, serif;
 	text-align: center;
@@ -31,9 +30,9 @@ body{
 
 
 .cabeçalho > h1{
-	height: 25vw;
 	font-size: 25vh;
 	padding-top: 50px;
+	padding-bottom: 10px;
 	font-weight: 100;
 	word-spacing: 6px;
 	color: white;
