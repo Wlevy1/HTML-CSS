@@ -14,6 +14,8 @@
 	color: black;
 	margin: 0px;
 	padding: 0px;
+	background-repeat: no-repeat;
+	background-size: 100vh;
 }
 
 body{
@@ -30,7 +32,7 @@ body{
 
 
 .cabeçalho > h1{
-	font-size: 25vh;
+	font-size: 19vh;
 	padding-top: 50px;
 	padding-bottom: 10px;
 	font-weight: 100;
@@ -45,10 +47,7 @@ body{
 }
 
 .cabeçalho > p > a:hover{
-	transition-duration: 0.5s;
-	background-color: rgba(255, 255, 255, 0.322);
-	border-radius: 15px;
-	padding: 0px 4px;
+
 }
 
 #site{
@@ -58,6 +57,10 @@ body{
 }
 
 #site:hover{
+	transition-duration: 0.5s;
+	background-color: rgba(255, 255, 255, 0.322);
+	border-radius: 15px;
+	padding: 0px 4px;
 	text-decoration: underline;
 }
 
@@ -83,7 +86,8 @@ section > p{
 .imagem > p{
 	color: white;
 	background-color: rgba(0, 0, 0, 0.342);
-	width: 400px;
+	min-width: 100px;
+	max-width: 500px;
 	padding: 5px 15px;
 	text-shadow: 2px 3px 1px black;
 }
@@ -95,9 +99,9 @@ section > p{
 #img1{
 	background-image: url(assets/imagens/background001.jpg);
 	background-position: center right;
-	background-size: cover;
 	box-shadow: inset 0px 3px 10px 1px black;
 	background-attachment: fixed;
+	background-size: cover;
 }
 
 #img2{
@@ -105,6 +109,7 @@ section > p{
 	background-position: center;
 	box-shadow: inset 0px 3px 10px 1px black;
 	background-attachment: fixed;
+	background-size: 100%;
 }
 
 footer{
@@ -117,3 +122,4 @@ footer{
 footer > span{
 	color: white;
 }
+
