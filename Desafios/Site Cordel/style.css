@@ -46,22 +46,17 @@ body{
 	color: white;
 }
 
-.cabeçalho > p > a:hover{
-
-}
-
 #site{
-	text-decoration: none;
+	text-decoration: underline;
 	color: white;
 	font-weight: bolder;
 }
 
 #site:hover{
 	transition-duration: 0.5s;
-	background-color: rgba(255, 255, 255, 0.322);
-	border-radius: 15px;
+	background-color: rgba(255, 255, 255, 0.178);
+	border-radius: 8px;
 	padding: 0px 4px;
-	text-decoration: underline;
 }
 
 section{
@@ -81,6 +76,7 @@ section > p{
 
 .imagem{
 	background-color: rgb(24, 39, 39);
+	margin-left: -13px;
 }
 
 .imagem > p{
@@ -120,6 +116,11 @@ footer{
 }
 
 footer > span{
+	padding: 3px;
 	color: white;
 }
 
+#colunas{
+	columns: 2;
+	padding-bottom: 200px;
+}
