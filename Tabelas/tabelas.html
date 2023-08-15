@@ -1,49 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tabelas(quase inutil)</title>
 	<style>
-		td{
-			border: 1px solid black;
-			padding: 0px 5px;
-		}
 		table{
-			width: 300px;
-			height: 200px;
 			border-collapse: collapse;
+			border: 1px solid black;
+		}
+
+		th, td{
+			border: 1px solid black;
+			padding: 8px;
+		}
+
+		th{
+			background-color: rgba(211, 211, 211, 0.377);
+		}
+
+		.posição{
+			text-align: right;
+		}
+
+		.posição > img{
+			width: 10px;
 		}
 
 	</style>
 </head>
 <body>
-	<h1>Tabela</h1>
+	<h1>Tabela (teste rapido pq to com preguiça e quase nunca é usada)</h1>
 	<!-- hierarquia das tabelas:
 	<table> tabela
 		<tr> linhas da tabela </tr>
 			<th> títulos de tabela </th>
 			<td> dados da tabela </td>
-	</table>-->
+	</table>
+
+	nas tables pode se ter thead, tbody e tfoot as três tem tr, th e td dentro
+
+	colspan="x" para fazer com que o td ou th ocupe mais que uma tr -->
 	<table>
-		<tr>
-			<td>A1</td>
-			<td>A2</td>
-			<td>A3</td>
-		</tr>
-
-		<tr>
-			<td>B1</td>
-			<td>B2</td>
-			<td>B3</td>
-		</tr>
-
-		<tr>
-			<td>A1</td>
-			<td>A2</td>
-			<td>A3</td>
-		</tr>
-
+		<thead>
+			<tr>
+				<th>País</th>
+				<th>População</th>
+				<th>Posição em<br>população mundial</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Brasil</td>
+				<td>215.000.000</td>
+				<td class="posição">7 <img src="assets/lupa.png"></td>
+			</tr>
+			<tr>
+				<td>Reino Unido</td>
+				<td>67.800.000</td>
+				<td class="posição">21 <img src="assets/lupa.png"></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<th colspan="3">finalizei :D</th>
+		</tfoot>
 	</table>
 	
 </body>
