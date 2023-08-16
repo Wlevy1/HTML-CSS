@@ -13,8 +13,13 @@ table{
 td{
 	border-collapse: collapse;
 	border: 1px solid black;
-	padding: 15px 25px;
+	padding: 15px 60px;
 	text-align: center;
 
+}
+
+div{
+	/* overflow-x adicionar uma rolagem lateral apenas na div e não no site inteiro */
+	overflow-x: auto;
 }
 
