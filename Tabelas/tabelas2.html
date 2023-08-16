@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabelas 2</title>
+	<style>
+		*{
+			margin: 0px;
+		}
+
+		h1{
+			margin: 50px;
+		}
+
+		table{
+			border: 1px black solid;
+			border-collapse: collapse;
+			text-align: center;
+		}
+
+		td{
+			border: 1px solid black;
+			padding: 38px;
+		}
+
+		p#coluna{
+			display: inline-block;
+			position: relative;
+			bottom: 40px;
+			left: 290px;
+		}
+
+		p#linha{
+			display: inline-block;
+			position: relative;
+			bottom: 300px;
+			left: -110px;
+
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Mesclagem de tabelas</h1>
+
+	<table>
+		<tbody>
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td rowspan="5">&infin;</td>
+			</tr>
+			<tr>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>
+			</tr>
+			<tr>
+				<td>G</td>
+				<td>H</td>
+				<td>I</td>
+			</tr>
+			<tr>
+				<td>J</td>
+				<td>K</td>
+				<td>L</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<td colspan="3">M</td>
+		</tfoot>
+	</table>
+
+	<p id="coluna">&llarr; usando &OpenCurlyDoubleQuote;<code>colspan = 3</code>&CloseCurlyDoubleQuote; faz com que ele ocupe 3 colunas ao invés de uma</p>
+
+	<p id="linha">&llarr; usando &OpenCurlyDoubleQuote;<code>rowspan = 4</code>&CloseCurlyDoubleQuote; faz com que ele ocupe 4 linhas ao invés de uma</p>
+	
+</body>
+</html>
