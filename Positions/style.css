@@ -1,0 +1,84 @@
+@charset "UTF-8";
+*{margin: 0px; padding: 0px;}
+
+body{
+	font-weight: 100;
+	padding: 0px 5px;
+	background: rgb(31, 31, 31);
+	color: rgb(206, 206, 206);
+	height: 3000px;
+}
+
+div{
+	color: white;
+	width: 200px;
+	height: 200px;
+	background-color: rgba(0, 255, 255, 0.527);
+	text-align: center;
+	margin: 50px 0px;
+	border-radius: 8px;
+}
+
+div > p{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#absolute{
+	/* a absolute basicamente fica "fora do documento" não interage com nada que está nele */
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#relative{
+	/* o relative vai fazer com que a div se movimente apenas em relação a posição padrão que estava antes */
+	position: relative;
+	bottom: 100px;
+	left: 30px;
+}
+
+#relative2{
+	position: relative;
+	left: 30px;
+
+}
+
+#absolute2{
+	/* inclusive absolutes podem ser usados dentro de divs com Relative para que ao invés que a posição absolute seja relativa a viewport, ela seja relativa a div que está */
+	margin: 0px;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	left: 10px;
+	bottom: 0px;
+	background-color: rgb(73, 122, 124);
+}
+
+#static{
+	position: static;
+}
+
+
+#fixed{
+	/* acho que é muito óbvio pra eu ter que explicar pra mim mesmo */
+	margin: 0px;
+	position: fixed;
+	width: 40px;
+	height: 20px;
+	left: 0px;
+	top: 0px;
+}
+
+#sticky{
+	padding: 5px;
+	position: sticky;
+	margin: 0px;
+	width: 200px;
+	height: 10px;
+	top: 0px;
+	bottom: 0px;
+	left: 500px;
+}
