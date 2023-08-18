@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>iframes</title>
+	<style>
+		body{
+			background-color: rgba(0, 0, 255, 0.616);
+		}
+
+		a, a:visited{
+			color: black;
+		}
+
+		iframe{
+			position: absolute;
+			width: 1150px;
+			height: 560px;
+			display: block;
+			right: 15px;
+			top: 60px;
+			border: 2px rgba(255, 255, 255, 0.548) dashed;
+		}
+	</style>
+</head>
+<body>
+	<h1>sinceramente nem ia fazer uma pasta só pra falar de Iframe, até eu descobrir  isso:</h1>
+	
+	<ul type="square">
+		<li><a href="../Desafios/Site Cordel/index.html" target="frame">Link Cordel</a></li> <!-- o "name" é colocado no target="" no caso eu coloquei o name dos iframes como "frame" -->
+
+		<li><a href="../Positions/index.html" target="frame">Link Positions</a></li>
+
+		<li><a href="#">Link 01*</a></li>
+	</ul>
+
+	<iframe id="frame" name="frame" src="" frameborder="0"></iframe>
+	
+</body>
+</html>
