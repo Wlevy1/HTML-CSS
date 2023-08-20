@@ -1,0 +1,31 @@
+@charset "UTF-8";
+*{margin: 0px; padding: 0px;}
+
+body{
+	background: fixed url("assets/imagens/fundo-madeira.jpg")center no-repeat;
+	background-size: cover;
+}
+
+#celular{
+	width: 211px;
+	height: 425px;
+	background: no-repeat url(assets/imagens/frame-iphone.png) fixed;
+	background-size: cover;
+	
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	transform: translate(-50%, 50%);
+}
+
+#link-instagram{
+}
+
+#link-whatsapp{
+}
+
+#link-twitter{
+}
+
+#link-github{
+}
