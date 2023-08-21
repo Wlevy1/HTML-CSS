@@ -7,34 +7,58 @@ body{
 }
 
 #celular{
-	width: 211px;
-	height: 425px;
+	width: 248px;
+    height: 500px;
 	background: no-repeat url(assets/imagens/frame-iphone.png) fixed;
 	background-size: cover;
 	
 	position: absolute;
 	left: 50%;
-	bottom: 50%;
-	transform: translate(-50%, 50%);
+	top: 50%;
+	transform: translate(-50%, -50%);
 }
 
 iframe#tela{
 	position: relative;
-	left: 15px;
-	top: 55px;
+	left: 18px;
+    top: 65px;
 
-	width: 181px;
-    height: 318px;
+	width: 212px;
+    height: 373px;
 }
 
-#link-instagram{
+a > img{
+	border-radius: 30%;
+	width: 55px;
+	margin: 10px 10px;
+	transform: translate(0%, 50%);
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	transition: margin 1s, transform 1s;
 }
 
-#link-whatsapp{
+a > img:hover{
+	transition: margin-right .2s ease-in-out, box-shadow .35s;
+	margin-right: 13px;
+	box-shadow: 2px 2px 3px black;
+	border: 2px solid white;
 }
 
-#link-twitter{
+nav{
+	text-align: right;
 }
 
-#link-github{
+footer{
+	width: 100%;
+	background-color: black;
+	position: fixed;
+	bottom: 0px;
+	padding: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+}
+
+footer > h1{
+	text-align: center;
+	color: white;
 }
