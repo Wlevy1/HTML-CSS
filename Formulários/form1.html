@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-color: rgba(255, 123, 0, 0.562);
+		}
+
+		input{
+			border-radius: 4px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<fieldset>
+		<legend>Alguns Dados Pessoais</legend>
+		<form action="submit.php" method="get" autocomplete="on">
+
+			<p><label for="inome">Nome Completo: <input type="text" name="nome" id="inome" autocomplete="name" placeholder="Seu Nome"></label>
+			</p>
+
+			<p><label for="idata">Data de Nascimento: <input type="date" name="data" id="idata" max="2023-08-22" min="2006-01-01" autocomplete="bday"></label>
+			</p>
+
+			<p><label for="isalario">Salário Mensal: <input type="number" name="salario" id="isalario" min="0" max="50000" step="50"></label>
+			</p>
+
+			<p>Sexo:<br>
+				<label for="imasc"><input type="radio" name="sexo" id="imasc">Masculino</label>
+				<label for="ifem"><input type="radio" name="sexo" id="ifem">Feminino</label>
+				<label for="ipref"><input type="radio" name="sexo" id="ipref">Prefiro não responder</label>
+			</p>
+
+			<p>Esportes que você pratica/praticou:<br>
+				<label for="fut"><input type="checkbox" name="checkfut" id="fut">Futebol<br></label>
+
+				<label for="vol"><input type="checkbox" name="checkvolei" id="vol">Vôlei<br></label>
+
+				<label for="basq"><input type="checkbox" name="checkbasq" id="basq">Basquete<br></label>
+
+				<label for="nat"><input type="checkbox" name="checknat" id="nat">Natação<br></label>
+
+			</p>
+
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Resetar">
+
+		</form>
+	</fieldset>
+
+</body>
+</html>
