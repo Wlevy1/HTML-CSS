@@ -11,8 +11,16 @@
 
 		input{
 			border-radius: 4px;
+			margin-top: 10px;
 		}
 
+		input#icor{
+			margin-top: 10px;
+		}
+
+		input#isalario::after{
+			content: ",00";
+		}
 	</style>
 </head>
 <body>
@@ -31,6 +39,7 @@
 			</p>
 
 			<p>Sexo:<br>
+				<!-- para fazer com que apenas possa escolher 1 precisa colocar todos com o mesmo "name" -->
 				<label for="imasc"><input type="radio" name="sexo" id="imasc">Masculino</label>
 				<label for="ifem"><input type="radio" name="sexo" id="ifem">Feminino</label>
 				<label for="ipref"><input type="radio" name="sexo" id="ipref">Prefiro não responder</label>
@@ -45,10 +54,51 @@
 
 				<label for="nat"><input type="checkbox" name="checknat" id="nat">Natação<br></label>
 
+
+				<!-- no value pode se usar #000ff000 (exemplo) pra dar uma cor padrão -->
+				<label for="icor">Cor: <input type="color" name="cor" id="icor"></label><br>
+
+
+				<!-- o min e max padrão é de 0 a 100 -->
+
 			</p>
+
+			<label for="iest">Estado: </label>
+			<select name="estado" id="iest">
+				<option value="" selected disabled>--- Escolha ---</option>
+				<optgroup label="Sla">
+				<option value="PE">Pernambuco</option>
+				<option value="SP">São Paulo</option>
+				</optgroup>
+
+				<optgroup label="Seila">
+					<option value="AM">Amazonas</option>
+					<option value="BH">Bahia</option>
+				</optgroup>
+			</select><br>
+
+			<h2>ou</h2>
+
+			<!-- ao adicionar datalist você pode adicionar uma list para input:text -->
+			<datalist id="list-profs">
+				<option value="Administrador"></option>
+				<option value="Médico"></option>
+				<option value="Policial"></option>
+				<option value="Autônomo"></option>
+				<option value="Empresário"></option>
+			</datalist>
+
+			<!-- desse jeito -->
+			<label for="iprof">
+				<p>Profissão: <input type="text" name="profissao" id="iprof" list="list-profs"></p>
+			</label>
+			
 
 			<input type="submit" value="Enviar">
 			<input type="reset" value="Resetar">
+
+			<label for="isats">Satisfação: <input type="range" name="satisfacao" id="isats" value="3" min="1" max="5"></label>
+
 
 		</form>
 	</fieldset>
