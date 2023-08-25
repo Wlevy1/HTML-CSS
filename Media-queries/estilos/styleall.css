@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-html, body{
-	color: white;
+/* style mobile first */
+
+*{padding: 0px; margin: 0px;}
+
+body{
+	background: fixed center no-repeat url(../imagens/back-phone.jpg);
 	font-family: Arial, Helvetica, sans-serif;
-	
+
 }

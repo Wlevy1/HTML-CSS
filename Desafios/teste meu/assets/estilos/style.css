@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) {
+
+}
+
+
+
+@media screen and (min-width: 1200px) {
+
+	header{
+		padding: 5px 0px;
+	}
+
+	header > nav > a{
+		display: inline-block;
+		margin: 0px 8px;
+		padding: 2px 3px;
+
+		text-decoration: none;
+		color: black;
+		background-color: rgba(192, 192, 192, 0.397);
+		border-radius: 5px;
+	}
+
+	header > nav > a:hover{
+		transform: translate(2px, 2px);
+		transition: transform 0.2s;
+	}
+
+	nav > a#contato:hover{
+		transform: translate(-2px, 2px);
+		transition: transform 0.2s;
+	}
+
+	header > h1{
+		font-size: 60px;
+	}
+
+	div > a{
+		display: block;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+	}
+
+	div#twitter{
+		background: url(../imagens/nova-logo-twitter.jpg) black fixed no-repeat;
+		background-size: cover;
+		position: fixed;
+		right: 0px;
+		top: 160px;
+	}
+
+	div#github{
+		position: fixed;
+		right: 0px;
+		top: 220px;
+	}
+
+	main{
+		width: 600px;
+		margin: auto;
+		padding: 10px;
+		border-radius: 0px 0px 5px 5px;
+	}
+
+	h2{
+		margin: 10px 0px;
+	}
+
+
+
+
+}
