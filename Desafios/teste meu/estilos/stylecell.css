@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+*{padding: 0px; margin: 0px;}
+
+body{
+	background: linear-gradient(to top, #432461 5%, #9A53E0) fixed;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+header{
+	height: 50px;
+	background-color: white;
+	padding: 5px;
+}
+header > h1{
+	text-align: center;
+	padding: 3px;
+}
+
+
+
+
+nav{
+	display: block;
+	border-radius: 8px;
+}
+
+nav > a{
+	background-color: rgba(255, 255, 255, 0.507);
+	padding: 0px 5px;
+	border-radius: 12px;
+	padding-bottom: 10px;
+	text-decoration: none;
+}
+
+nav > a#contato{
+	position: absolute;
+	right: 0px;
+	top: 65px;
+}
+nav > a#contato:hover{
+	transform: translate(-1px, 1px);
+}
+
+nav > a#config{
+	position: absolute;
+	top: 65px;
+}
+nav > a#config:hover{
+	transform: translate(1px, 1px);
+}
+
+nav > a > i{
+	transform: translateY(6px);
+}
+
+nav > a:active{
+	background: white;
+}
